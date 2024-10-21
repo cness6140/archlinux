@@ -1,1 +1,1 @@
-# archlinux.github.io
+# archlinux
