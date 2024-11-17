@@ -34,4 +34,12 @@ Figure 5
 
 ![alt text](<Screenshot 2024-11-03 at 2.47.02 PM.png>)
 
-I then ran into a lot of issues installing pacman.
+I then ran into a lot of issues installing pacman. At first I typed in the command `pacstrap -K /mnt base linux linux-firmware` incorrectly: I used an underscore instead of a hyphen and kept getting the error `target not found: linux_firmware`. Once I realized that silly error, I ran the command again, but got the error `Out of Memory`. This was confusing, as I had already installed a 10GB partition of swap, but when I ran `free -l`, it said I had 0GB of swap space.
+
+I eventually realized that I must've turned on swap incorrectly previously. I reran `mkswap /dev/nvme0n1p2` before running `swapon /dev/nvme0n1p2`. Once I ran these again, I had memory. 
+
+However, the pacstrap command still didn't work; I then got the following error: 
+
+![alt text](<Screenshot 2024-11-17 at 1.14.22 PM.png>)
+
+Users on Reddit suggested that removing the file `/var/lib/pacman/db.lck` would fix this issue. It did not.
