@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Arch Linux"
+title: Arch
 permalink: /archlinux
 ---
 
