@@ -39,6 +39,7 @@ I then selected the mirrors:
 Figure 5
 
 ![alt text](<Screenshot 2024-11-03 at 2.47.02 PM.png>)
+Figure 6
 
 I then ran into a lot of issues installing pacman. At first I typed in the command `pacstrap -K /mnt base linux linux-firmware` incorrectly: I used an underscore instead of a hyphen and kept getting the error `target not found: linux_firmware`. Once I realized that silly error, I ran the command again, but got the error `Out of Memory`. This was confusing, as I had already installed a 10GB partition of swap, but when I ran `free -l`, it said I had 0GB of swap space.
 
@@ -47,6 +48,7 @@ I eventually realized that I must've turned on swap incorrectly previously. I re
 However, the pacstrap command still didn't work; I then got the following error: 
 
 ![alt text](<Screenshot 2024-11-17 at 1.14.22 PM.png>)
+Figure 7
 
 Users on Reddit suggested that removing the file `/var/lib/pacman/db.lck` would fix this issue. It did not.
 
@@ -54,13 +56,22 @@ I also ran `ps aux | grep pacman` and killed the few pacman processes that were 
 
 I then decided to re-run every command I had done after `cfdisk`, and then try `pacstrap` again. And then, mysteriously, it worked. I think the issue was that I would shut down my VM and restart it when resuming work, and each time that happened, systemd unmounted everything, but I mistakenly assumed that every change I made stayed between shutdowns.
 
-
-
-You probably can't tell, since this README is pretty short, but I spent a really long time troubleshooting stuff here... and I'm not sure how to fix it all :(
-
-![alt text](<Screenshot 2024-11-17 at 2.02.01 PM.png>)
-![alt text](<Screenshot 2024-11-17 at 2.08.28 PM.png>)
-![alt text](<Screenshot 2024-11-17 at 2.15.18 PM.png>)
-![alt text](<Screenshot 2024-11-17 at 1.57.40 PM.png>)
-![alt text](<Screenshot 2024-11-17 at 1.35.39 PM.png>)
 ![alt text](<Screenshot 2024-11-17 at 1.29.50 PM.png>)
+Figure 8
+
+![alt text](<Screenshot 2024-11-17 at 1.35.39 PM.png>)
+Figure 9
+
+Yay! Now arch-chroot seemed to work. Sadly, this was far from the end of my problems. As I continued through the steps, `nano` was required to edit files. Chroot did not have nano, but when I tried to install it, a required file was corrupted.
+
+![alt text](<Screenshot 2024-11-17 at 2.08.28 PM.png>)
+Figure 10
+
+![alt text](<Screenshot 2024-11-17 at 2.15.18 PM.png>)
+Figure 11
+
+At this point, I am bashing my head against the wall. (Haha... get it? **Bash**ing...) You probably can't tell from the README, since it's pretty short, but I have run into problem after problem at almost every step of the way, and I am *sick* of it.
+
+To attempt to solve this issue, 
+
+
