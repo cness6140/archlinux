@@ -52,9 +52,15 @@ Users on Reddit suggested that removing the file `/var/lib/pacman/db.lck` would 
 
 I also ran `ps aux | grep pacman` and killed the few pacman processes that were running, before re-running pacstrap. This also did not work.
 
-I then decided to re-run every command I had done after `cfdisk`, and then try `pacstrap` again. And then, mysteriously, it worked. Not sure why.
+I then decided to re-run every command I had done after `cfdisk`, and then try `pacstrap` again. And then, mysteriously, it worked. I think the issue was that I would shut down my VM and restart it when resuming work, and each time that happened, systemd unmounted everything, but I mistakenly assumed that every change I made stayed between shutdowns.
 
 
 
 You probably can't tell, since this README is pretty short, but I spent a really long time troubleshooting stuff here... and I'm not sure how to fix it all :(
-    
+
+![alt text](<Screenshot 2024-11-17 at 2.02.01 PM.png>)
+![alt text](<Screenshot 2024-11-17 at 2.08.28 PM.png>)
+![alt text](<Screenshot 2024-11-17 at 2.15.18 PM.png>)
+![alt text](<Screenshot 2024-11-17 at 1.57.40 PM.png>)
+![alt text](<Screenshot 2024-11-17 at 1.35.39 PM.png>)
+![alt text](<Screenshot 2024-11-17 at 1.29.50 PM.png>)
