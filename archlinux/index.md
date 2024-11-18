@@ -1,3 +1,7 @@
+layout: page
+title: "Arch Linux"
+permalink: /archlinux
+
 # Arch Linux Install
 
 I used the [Archboot](https://release.archboot.com/aarch64/2024.09/iso/) ARM install of Arch Linux for this project, downloading the ISO and installing it to VMWare Fusion.
