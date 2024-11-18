@@ -9,12 +9,12 @@ permalink: /archlinux/
 I used the [Archboot](https://release.archboot.com/aarch64/2024.09/iso/) ARM install of Arch Linux for this project, downloading the ISO and installing it to VMWare Fusion.
 
 I checked the IP and network connectivity:
-![alt text](<Screenshot 2024-11-03 at 1.42.34 PM.png>)
+![alt text](archlinx/<Screenshot 2024-11-03 at 1.42.34 PM.png>)
 Figure 1
 
 Used `cfdisk` to partition the disk into EFI, swap, and the root filesystem:
 
-![alt text](<Screenshot 2024-11-03 at 2.05.56 PM.png>)
+![alt text](archlinux/<Screenshot 2024-11-03 at 2.05.56 PM.png>)
 Figure 2
 
 ![alt text](<Screenshot 2024-11-03 at 2.11.24 PM.png>)
