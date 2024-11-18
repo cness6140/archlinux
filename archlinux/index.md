@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Arch
-permalink: /archlinux
+permalink: /archlinux/
 ---
 
 # Arch Linux Install
