@@ -77,7 +77,7 @@ To attempt to solve this issue, I updated the keyring. I removed everything in `
 ![alt text](<Screenshot 2024-11-18 at 4.09.35 AM.png>)
 Figure 12
 
-Codi I am sorry ... if you see this before class today... I am struggling
+Codi I am sorry ... if you see this before class today... I am struggling...
 
 
 
