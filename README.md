@@ -43,3 +43,12 @@ However, the pacstrap command still didn't work; I then got the following error:
 ![alt text](<Screenshot 2024-11-17 at 1.14.22 PM.png>)
 
 Users on Reddit suggested that removing the file `/var/lib/pacman/db.lck` would fix this issue. It did not.
+
+I also ran `ps aux | grep pacman` and killed the few pacman processes that were running, before re-running pacstrap. This also did not work.
+
+I then decided to re-run every command I had done after `cfdisk`, and then try `pacstrap` again. And then, mysteriously, it worked. Not sure why.
+
+
+
+You probably can't tell, since this README is pretty short, but I spent a really long time troubleshooting stuff here... and I'm not sure how to fix it all :(
+    
