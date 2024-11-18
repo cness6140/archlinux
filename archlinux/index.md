@@ -1,6 +1,8 @@
+---
 layout: page
 title: "Arch Linux"
 permalink: /archlinux
+---
 
 # Arch Linux Install
 
