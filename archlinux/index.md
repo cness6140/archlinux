@@ -72,7 +72,7 @@ Figure 11
 
 At this point, I am bashing my head against the wall. (Haha... get it? **Bash**ing...) You probably can't tell from the README, since it's pretty short, but I have run into problem after problem at almost every step of the way, and I am *sick* of it. For the record, I haven't been noting most of the side quests I tiptoe down to solve an issue, just the notable ones.
 
-To attempt to solve this issue, I updated the keyring. I removed everything in `/var/cache/pacman/pkg/`, as well as `/etc/pacman.d/gnug.` I then reinitialized the keyring, repopulated it, and updated the system package database. However, this did not work. The file was still corrupted, and I could not install `nano`. Attempting to install other packages had the same issue.
+To attempt to solve this issue, I updated the keyring. I removed everything in `/var/cache/pacman/pkg/`, as well as `/etc/pacman.d/gnug.` I then reinitialized the keyring (`pacman-key --init`), repopulated it (`pacman-key --populate archlinux`), and updated the system package database (`pacman -Sy`). However, this did not work. The file was still corrupted, and I could not install `nano`. Attempting to install other packages had the same issue.
 
 ![alt text](<Screenshot 2024-11-18 at 4.09.35 AM.png>)
 Figure 12
