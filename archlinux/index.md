@@ -77,7 +77,11 @@ To attempt to solve this issue, I updated the keyring. I removed everything in `
 ![alt text](<Screenshot 2024-11-18 at 4.09.35 AM.png>)
 Figure 12
 
-Codi I am sorry ... if you see this before class today... I am struggling...
+More issues:
+  
+Trying to install the archlinuxarm keyring, I ran out of memory. I ran `free -l` and saw I still have nearly 10G of swap available, but for some reason it's not being utilized. I tried to up the priority with `swapon /dev/nvme0n1p2 -p 10`, and adjust the swappiness parameter using `sysctl vm.swappiness=10 `, but even after these changes I still received the `Out of Memory` error.
+
+Once I receive the `Out of Memory` error, I can't Ctrl-C out of the command, so I have to restart the VM. But, of course, restarting the VM un-mounts everything, and I have to start over every time. I can't use snapshots, because after restoring a snapshot, the keyboard can't input (so I can't type anything).
 
 
 
