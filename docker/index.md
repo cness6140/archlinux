@@ -49,4 +49,9 @@ The `phpmyadmin` port also can be visited via port 8080, and has information abo
 ![alt text](image-5.png)
 Figure 6
 
+I then followed the setup instructions to create an account, username and password, which brought me to the Wordpress Admin interface:
+
+![alt text](image-6.png)
+Figure 7
+
 
