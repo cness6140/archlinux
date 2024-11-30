@@ -173,7 +173,7 @@ Then, after rebooting the system, it booted into a login page:
 ![alt text](<Screenshot 2024-11-29 at 5.54.06 PM.png>)
 Figure 23
 
-I used pacman to install the zsh shell, and made zsh the default shell for some users (root and justin). I left bash for clara and for codi
+I used pacman to install the zsh shell, and made zsh the default shell for some users (root and Justin). I left bash for Clara and for Codi.
 
 ![alt text](<Screenshot 2024-11-25 at 12.11.57 PM.png>)
 Figure 24
@@ -188,7 +188,7 @@ Figure 26
 
 I then attempted to add color coding to the terminal. I did this by aliasing commands to use color formatting. This list could be far more exhaustive, and the [Arch Linux Wiki](https://wiki.archlinux.org/title/User:Grufo/Color_System's_Bash_Prompt) had another, more extensive and complex solution that I would be curious to explore in the future.
 
-For zsh, I wrote out the aliases by hand; for bash, the command `sudo cp -r /etc/skel/. /home/clara/` copied default configration files, which already included settings for colored output. Figure 27 below shows color coding for Bash, and Figure 28 shows zsh. Figure 29 shows the default shells for each user.
+For zsh, I wrote out the aliases by hand; for bash, the command `sudo cp -r /etc/skel/. /home/clara/` copied default configuration files, which already included settings for colored output. Figure 27 below shows color coding for Bash, and Figure 28 shows zsh. Figure 29 shows the default shells for each user.
 
 ![alt text](image.png)
 Figure 27
