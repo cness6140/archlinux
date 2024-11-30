@@ -117,6 +117,11 @@ I also created users Justin, Codi, and Clara, and added them to the `sudoers` fi
 ![alt text](<Screenshot 2024-11-24 at 6.44.04 PM.png>)
 Figure 16
 
+I also created users Justin, Codi, and Clara, and added them to the `sudoers` file.
+
+![alt text](<Screenshot 2024-11-24 at 6.44.04 PM.png>)
+Figure 16
+
 Then, I installed the Linux kernel, and created an `initramfs` (initial RAM filesystem) image:
 
 ![alt text](<Screenshot 2024-11-24 at 4.26.28 PM.png>)
@@ -171,39 +176,11 @@ systemctl start sddm.service
 Then, after rebooting the system, it booted into a login page:
 
 ![alt text](<Screenshot 2024-11-29 at 5.54.06 PM.png>)
-Figure 23
-
-I used pacman to install the zsh shell, and made zsh the default shell for some users (root and Justin). I left bash for Clara and for Codi.
-
-![alt text](<Screenshot 2024-11-25 at 12.11.57 PM.png>)
-Figure 24
-
-![alt text](<Screenshot 2024-11-26 at 12.32.48 PM.png>)
-Figure 25
-
-I also used pacman to install SSH.
-
-![alt text](<Screenshot 2024-11-25 at 12.32.37 PM.png>)
-Figure 26
-
-I then attempted to add color coding to the terminal. I did this by aliasing commands to use color formatting. This list could be far more exhaustive, and the [Arch Linux Wiki](https://wiki.archlinux.org/title/User:Grufo/Color_System's_Bash_Prompt) had another, more extensive and complex solution that I would be curious to explore in the future.
-
-For zsh, I wrote out the aliases by hand; for bash, the command `sudo cp -r /etc/skel/. /home/clara/` copied default configuration files, which already included settings for colored output. Figure 27 below shows color coding for Bash, and Figure 28 shows zsh. Figure 29 shows the default shells for each user.
-
-![alt text](image.png)
-Figure 27
 
 ![alt text](<Screenshot 2024-11-26 at 12.31.31 PM.png>)
 Figure 28
 
 ![alt text](<Screenshot 2024-11-25 at 12.33.33 PM.png>)
-Figure 29
-
-Finally, I used `chage -d 0 {username}` to force password reset on next login for Codi and Justin.
-
-![alt text](<Screenshot 2024-11-29 at 6.25.30 PM.png>)
-Figure 30
-
-I also added a few more aliases on the root user for shortcuts.
-
-![alt text](image-1.png)
+![alt text](<Screenshot 2024-11-25 at 12.32.37 PM.png>)
+![alt text](<Screenshot 2024-11-25 at 12.11.57 PM.png>)
+![alt text](<Screenshot 2024-11-26 at 12.32.48 PM.png>)
