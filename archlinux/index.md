@@ -203,3 +203,7 @@ Finally, I used `chage -d 0 {username}` to force password reset on next login fo
 
 ![alt text](<Screenshot 2024-11-29 at 6.25.30 PM.png>)
 Figure 30
+
+I also added a few more aliases on the root user for shortcuts.
+
+![alt text](image-1.png)
