@@ -4,6 +4,8 @@ title: Wireguard
 permalink: /wireguard/
 ---
 
+# Project 3: Creating a Wireguard VPN Using Digital Ocean and Docker
+
 For this project, I referenced a few guides: to set up [Docker](https://thematrix.dev/install-docker-and-docker-compose-on-ubuntu-20-04/) and to set up [Wireguard](https://thematrix.dev/setup-wireguard-vpn-server-with-docker/).
 
 To create a Digital Ocean droplet, I selected Create > Droplets at the top right of the Digital Ocean; then San Francisco as the region, with an Ubuntu OS, and the Basic Regular CPU, at $6/mo. I created a password, then selected Create Droplet at the bottom of the page. I then SSHed into the droplet with `ssh root@ip`, seen below.

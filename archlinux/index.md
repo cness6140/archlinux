@@ -4,7 +4,7 @@ title: Arch
 permalink: /archlinux/
 ---
 
-# Arch Linux Install
+# Project 1: Installing Arch Linux
 
 I used the [Archboot](https://release.archboot.com/aarch64/2024.09/iso/) ARM install of Arch Linux for this project, downloading the ISO and installing it to VMWare Fusion.
 
